@@ -1,0 +1,117 @@
+body {
+    min-height: 100vh;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif;
+    background-color: antiquewhite;
+
+}
+
+#device {
+    background-color: black;
+    width: 300px;
+    height: 550px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    transform:scale(1.1);
+    box-shadow: 11px 1px 35px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 11px 1px 35px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 11px 1px 35px -1px rgba(0,0,0,0.75);   
+}
+
+#display {
+    font-size: 75px;
+    font-weight: 200;
+    color: white;
+    text-align: right;
+    padding: 10px;
+    padding-right: 20px;
+    margin-top: auto;
+    
+    
+}
+
+#display.sixDig {
+    font-size: 72px;
+}
+
+#display.sevenDig {
+    font-size: 58px;
+    padding-right: 28px;
+}
+
+#display.eightDig {
+    font-size: 50px;
+    padding-right: 30px;
+}
+
+#display.nineDig {
+    font-size: 45px;
+    padding-right: 32px;
+}
+
+#btnContainer {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    border-style: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'SF Pro Text', -apple-system, BlinkMacSystemFont, Roboto, 'Segoe UI', Helvetica, Arial, sans-serif;
+    transition: 300ms;
+}
+
+.mod {
+    background-color: rgb(177, 177, 177);
+    
+}
+
+.mod:active {
+    background-color: rgb(225, 225, 225);
+}
+
+.orange {
+    background-color: orange;
+    color: white;
+    font-weight: 500;
+    font-size:30px;
+    padding-bottom: 5px;
+}
+
+.orange:active {
+    background-color: rgb(255, 220, 156);
+}
+
+
+.num, #decimal {
+    background-color:rgb(63, 63, 63) ;
+    color: white;
+    font-size: 30px;
+    
+}
+
+.num:active, #decimal:active {
+    background-color:rgb(183, 183, 183) ;
+}
+
+#zero {
+    width: 130px;
+    text-align: left;
+    padding-left: 22px;
+}
